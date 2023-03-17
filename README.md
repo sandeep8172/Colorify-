@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+1--> Create a Login Componentfor our Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+• Just like howinour Google Drive account,we have a unique set of documents stored corresponding to our email ID
 
-## Available Scripts
+• Similarly we want to create an application where every userwill be able to store his unique set of colors
 
-In the project directory, you can run:
+• Todo that we will have to use Firebase Authentication in our Application.
 
-### `npm start`
+• Provide with an option to Sign Up for the new User as well as Sign In for the existing user 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+• Handle all the Error Scenarios such as:
+      o User Clicks on Sign In/ Sign Up buttons without entering the username and password
+      o When user tries to login but he has not created an Account yet
+      o When user enters an Invalid Password
+      o When user tries to create an account using existingEmail ID
+      o When password is too short
+      o Entered email address is not in the valid format
+      
+• After successful login takethe user to the Home Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+2---> Create a Home Page Component
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+• Provide with a button to create a new color using RGB format
 
-### `npm run build`
+• On clicking the Add button open the componentColor Palettefor creating a unique color
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+•Inthe Color Palettecomponent provide with an option to generate a uniquecolorusing the Amount of RGB colors
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+•On Adding the given color, render itin the users Home Page•
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Provide with an option to Delete and Edit the added colors
 
-### `npm run eject`
+3 --> Provide one Sign Out button
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+•On clicking the Sign Out Button user should be directed back to the Login Screen
